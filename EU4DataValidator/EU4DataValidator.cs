@@ -23,6 +23,7 @@ namespace EU4DataValidator
     public class DataValidator
     { // This class is responsible for validating EU4 data files, loading them, and parsing them into a usable format. There should theoretically only be one instance of this class, as it is a singleton.
         // However, for testing purposes it should be allowed to have multiple instances for unit testing and debugging.
+        // Validation is not the same as Syntax Checking. Validation should be an option, Syntax Checking should be mandatory. And yeah I should split it into two separate classes. Maybe even 3 if I were to split the file handling into a separate class.
         public Guid id = Guid.NewGuid(); // This is just a unique identifier for the instance of the DataValidator, useful for debugging and logging purposes.
         public List<string> loadedRawText = new List<string>(); // this is mostly useful for debugging purposes, to see what the raw text looks like before parsing
         public List<string> validTags = new List<string>(); // this would work better as a HashSet<string> for faster lookups

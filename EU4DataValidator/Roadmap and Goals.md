@@ -1,0 +1,40 @@
+﻿# Roadmap and Goals
+[ ] - Full Coverage of All File Types:
+- [ ] Provinces
+- [ ] Tags
+	- [ ] Tag List
+		- [x] List<string> of Tags
+		- [ ] HashSet<string> of Tags implementation, maybe actually a frequency bool list maybe? using a static dictionary?
+	- [ ] Tag to Country File Definition Mapping
+		- [x] Tuples and Dictionaries of Tag to Country File Paths
+- [ ] Do a recursive load? So like after you load the tags, you can load the countries based on the dictionary.
+	- [ ] Recursive load of Tags to Country Files. // this may slow down things to a crawl. you'd have to load an aditional file for each tag, so that's a O(2n) load instead of an O(n). Lazy loading seems to make more sense.
+	- [ ] A full recursive load of all files crawled. 
+- [ ] Countries
+	- [ ] Load country file from path. // (country files that exist in the commons folder, NOT the ones in the history folder)
+		- [ ] Support for all data descriptors:
+			- [ ] very simple descriptors ( x = y) // I technically already have this, but I need to make sure it works for all data types.
+				- [ ] graphical_culture
+				- [ ] preffered_religion
+				- [ ] historical_score
+			- [ ] very simple 3-tuple descriptors ( x = { y z w })
+				- [ ] color
+				- [ ] revolutionary_colors
+			- [ ] very simple enums (technically named lists but they are declared just like enums)
+				- [ ] historical_idea_groups
+				- [ ] historical_units
+			- [ ] stringed bucket lists (x = { x "y z" k ... })
+				- [ ] leader_names
+				- [ ] ship_names
+			- [ ] dictionary (x = { "x y" = z \n "a b" = c ... })
+				- [ ] monarch_names
+- [ ] History Files
+- [ ] Events
+- [ ] Decisions
+- [ ] Modifiers
+- [ ] Ideas
+- [ ] Techs
+- [ ] Cultures
+- [ ] Religions
+- [ ] Formables
+- [ ] 
