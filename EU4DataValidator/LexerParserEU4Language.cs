@@ -12,6 +12,7 @@ namespace EU4DataValidator
         public int lineNumber;
         public required string content;
         public bool isMultiLine => content.Contains("{") || content.Contains("}");
+        //TODO: Add the scope property, it's based on what the path of the file is. For example, if the file is in common/countries, the scope is "common/countries". This is used to determine the context of the token.
     }
     internal class LexerParserEU4Language
     {
