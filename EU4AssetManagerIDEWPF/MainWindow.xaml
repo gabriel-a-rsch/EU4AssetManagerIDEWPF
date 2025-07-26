@@ -6,5 +6,5 @@
         xmlns:local="clr-namespace:EU4AssetManagerIDEWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Frame x:Name="MainFrame" Source="CountryMainMenuPage.xaml"/>
+    <Frame x:Name="MainFrame" Source="MainContainerPage.xaml"/>
 </Window>

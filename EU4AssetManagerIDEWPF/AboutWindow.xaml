@@ -1,0 +1,37 @@
+﻿<Window x:Class="EU4AssetManagerIDEWPF.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EU4AssetManagerIDEWPF"
+        mc:Ignorable="d"
+        Title="About" Height="237" Width="236">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="59*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="1" Grid.ColumnSpan="4" Content="EU4 Asset Manager IDE" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" Margin="17,0,0,0"/>
+        <Label Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" Content="Version 0.0.1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="21,0,0,0"/>
+        <Label Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Content="Developed by Gabriel A." HorizontalAlignment="Left" VerticalAlignment="Center" Margin="36,0,0,0"/>
+        <Label Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="5" Content="© 2023 Gabriel A. All Rights reserverd." HorizontalAlignment="Left" VerticalAlignment="Center" Margin="12,0,0,0"/>
+        <Label Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" Content="This Software Is Open Source"/>
+        <TextBlock Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap">
+            <Hyperlink NavigateUri="https://github.com/gabriel-a-rsch/EU4AssetManagerIDEWPF" RequestNavigate="Hyperlink_RequestNavigate">
+                https://github.com/gabriel-a-rsch/EU4AssetManagerIDEWPF
+            </Hyperlink>
+        </TextBlock>
+
+    </Grid>
+</Window>
